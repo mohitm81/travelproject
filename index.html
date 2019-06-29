@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Grayscale - Start Bootstrap Theme</title>
+  <title>Travel Community</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -53,8 +53,8 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+        <h1 class="mx-auto my-0 text-uppercase">TRAVEL ADVENTURES</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free commmunity to share your travel adventures.</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
       </div>
     </div>
@@ -137,12 +137,69 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          
+          <h2 class="content-head is-center">Contact Us!</h2>
+          <aside>
+               <p>
+                   We would <em>love</em> to hear from you! </p>
+                   <p>Please use the <b><em>Contact Form</em></b>
+                   to send us a message.
+               </p>
+           </aside>
+        
+        <!-- START HERE -->
+           <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+           <!-- Style The Contact Form How Ever You Prefer -->
+           <link rel="stylesheet" href="style.css">
+        
+          <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbwaNlVRQXWy3qkRecpUOLU45gQlAciTFQ-ykxThOrbAkr7SdXo/exec">
+            <!-- change the form action to your script url -->
+        
+            <div class="form-elements">
+              <fieldset class="pure-group">
+                <label for="name">Name: </label>
+                <input id="name" name="name" placeholder="What your Mom calls you" />
+              </fieldset>
+        
+              <fieldset class="pure-group">
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="10"
+                placeholder="Tell us what's on your mind..."></textarea>
+              </fieldset>
+        
+              <fieldset class="pure-group">
+                <label for="email"><em>Your</em> Email Address:</label>
+                <input id="email" name="email" type="email" value=""
+                required placeholder="your.name@email.com"/>
+              </fieldset>
+        
+              <fieldset class="pure-group">
+                <label for="color">Favourite Color: </label>
+                <input id="color" name="color" placeholder="green" />
+              </fieldset>
+        
+              <fieldset class="pure-group honeypot-field">
+                <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                <input id="honeypot" type="text" name="honeypot" value="" />
+              </fieldset>
+        
+              <button class="button-success pure-button button-xlarge">
+                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+            </div>
+        
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display:none;">
+              <h2><em>Thanks</em> for contacting us!
+                We will get back to you soon!</h2>
+            </div>
+        
           </form>
+        
+          <!-- Submit the Form to Google Using "AJAX" -->
+          <script data-cfasync="false" src="form-submission-handler.js"></script>
+        <!-- END -->
 
         </div>
       </div>
